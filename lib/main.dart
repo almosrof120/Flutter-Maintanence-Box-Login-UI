@@ -79,6 +79,17 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
               ),
+              const SizedBox(
+                height: 20,
+              ),
+              const TextField(
+                decoration: InputDecoration(
+                  hintText: 'Email',
+                ),
+              ),
+              const SizedBox(
+                height: 100,
+              ),
               Container(
                 height: 50,
                 width: 300,
@@ -96,7 +107,33 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                 ),
-              )
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  Text(
+                    " Don't have a account?",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontFamily: 'Rubik Regular',
+                      color: Color(0xff4C5980),
+                      fontSize: 16,
+                    ),
+                  ),
+                  Text(
+                    'Sign Up',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontFamily: 'Rubik Medium',
+                      color: Color(0xffF97038),
+                      fontSize: 16,
+                    ),
+                  ),
+                ],
+              ),
             ],
           ),
         ),
