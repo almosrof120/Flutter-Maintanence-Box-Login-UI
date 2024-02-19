@@ -66,7 +66,7 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               const SizedBox(
-                height: 14,
+                height: 10,
               ),
               const Center(
                 child: Text(
@@ -80,11 +80,79 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               const SizedBox(
-                height: 20,
+                height: 50,
               ),
-              const TextField(
-                decoration: InputDecoration(
-                  hintText: 'Email',
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: TextField(
+                  decoration: InputDecoration(
+                    hintText: 'Email',
+                    hintStyle: const TextStyle(fontFamily: 'Rubik Regular'),
+                    fillColor: const Color(0xffF8F9FA),
+                    filled: true,
+                    prefixIcon: const Icon(
+                      Icons.alternate_email,
+                      color: Color(0xff323F4B),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: const BorderSide(
+                        color: Color(0xffE4E7EB),
+                      ),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide: const BorderSide(
+                        color: Color(0xffE4E7EB),
+                      ),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 20, right: 20, top: 10),
+                child: TextField(
+                  decoration: InputDecoration(
+                    hintText: 'Password',
+                    hintStyle: const TextStyle(fontFamily: 'Rubik Regular'),
+                    fillColor: const Color(0xffF8F9FA),
+                    filled: true,
+                    prefixIcon: const Icon(
+                      Icons.lock,
+                      color: Color(0xff323F4B),
+                    ),
+                    suffixIcon: const Icon(Icons.visibility_off_outlined),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: const BorderSide(
+                        color: Color(0xffE4E7EB),
+                      ),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide: const BorderSide(
+                        color: Color(0xffE4E7EB),
+                      ),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 215),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: const [
+                    Text(
+                      'Forgot Password?',
+                      //textAlign: TextAlign.center,
+                      style: TextStyle(
+                        decoration: TextDecoration.underline,
+                        fontFamily: 'Rubik Regular',
+                        color: Color(0xff4C598B),
+                        fontSize: 16,
+                      ),
+                    ),
+                  ],
                 ),
               ),
               const SizedBox(
